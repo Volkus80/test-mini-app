@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { FlexContainer } from "../FlexContainer/FlexContainer"
 import { ContainerProps } from "./ContainerProps";
 import { ThemedElement } from "@/types/themedElement";
 import { useThemeProvider } from "@/hooks/useThemeProvider";
@@ -16,11 +15,11 @@ const StyledContainer = styled.div<ThemedElement>`
     background: ${props => props.theme.$bg_color}
 `;
 
-const Container = ({children}: ContainerProps) => {
-    const {theme} = useThemeProvider();
+const Container = ({ children }: ContainerProps) => {
+    const { theme } = useThemeProvider();
     return <StyledContainer theme={theme}>
         {children}
     </StyledContainer>
 }
 
-export {Container}
+export { Container }
