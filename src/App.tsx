@@ -1,4 +1,3 @@
-import { Suspense, useState } from "react";
 import { Header } from "./components/app/Header"
 import { MainPage } from "./components/pages/MainPage";
 import { ThemeProvider } from "./hoc/ThemeProvider"
@@ -8,6 +7,7 @@ import { Container } from "./components/app/Container/Container";
 import { TypeShowMenu } from "./types";
 import { Route, Routes } from "react-router";
 import { useTelegram } from "./hooks";
+import { useState } from "react";
 
 const GlobalStyle = createGlobalStyle`
   * {
